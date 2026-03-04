@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blackbox Task App</title>
+</head>
+<body>
+  <h1>Blackbox Task App</h1>
+  
+  <button id="createTask">Create Task</button>
+
+  <script>
+    document.getElementById('createTask').addEventListener('click', async () => {
+      const response = await fetch('https://blackbox-tadk-app.onrender.com/create-task', {
+        method: 'POST',
+      });
+      const data = await response.json();
+      alert(JSON.stringify(data));
+    });
+  </script>
+</body>
+  </html>
