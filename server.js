@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = "bb_YOUR_REAL_API_KEY";
+const API_KEY = "sk-Fn9pM07NUGCgsveUr04pqw";
 
 app.get("/", (req, res) => {
   res.send("Server Running 🚀");
